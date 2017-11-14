@@ -1,0 +1,10 @@
+<div>
+  ng-style works!
+  <div [style.background-color]="'blue'" [style.font-size.px]="30">
+    方式一：[style.background-color]="'blue'" [style.font-size.px]="30"
+  </div>
+
+  <div [ngStyle]="{color: 'white', 'background-color': 'red'}">
+    <p>方式二：[ngStyle]=""</p>
+  </div>
+</div>

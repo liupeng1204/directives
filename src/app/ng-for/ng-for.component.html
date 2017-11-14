@@ -1,0 +1,25 @@
+<div>
+  ng-for works!
+  <p *ngFor="let item of list; let idx=index">
+    this is item{{item}}, index={{idx}}
+  </p>
+
+
+  <h4 class="ui horizontal divider header">
+    List of objects
+  </h4>
+  <table class="ui celled table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let p of people">
+      <td>{{ p.name }}</td>
+      <td>{{ p.age }}</td>
+      <td>{{ p.city }}</td>
+    </tr>
+  </table>
+</div>
